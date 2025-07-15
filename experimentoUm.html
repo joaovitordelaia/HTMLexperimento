@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Primeira Pagina</title>
-        <link rel="icon" type="image/x-icon" href="/icone/iconeHTML.ico">
+        <link rel="icon" type="image/x-icon" href="/icone/bee.ico">
         <style>
             body{
                 background-color: #f4d03f;
@@ -127,6 +127,123 @@
                 <p>Adiciona um comentario ao passar o mouse por cima do <link rel="stylesheet" href=""></p>
                 <a href="https://www.imdb.com/pt/title/tt0389790/" title="Melhor filme do universo">Passe o mouse para uma surpresa</a>
             </ul>
+            </section>
+            <hr>
+            <section>
+                <h2>Tabelas</h2>
+                <ol>
+                    <li><strong>Table:</strong> Para dar inicio a uma tabela</li>
+                    <li><strong>Tr:</strong> para criar uma linha</li>
+                    <li><strong>th:</strong>para ser o cabeçalho da uma tabela</li>
+                    <li><strong>td:</strong>são os dados</li>
+                </ol>
+                <table border="2" width = "400px">
+                    <tr>
+                        <th>Raça</th>
+                        <th style="width: 50px;">Mel</th>
+                        <th style="width: 120px;">Origem</th>
+                        <th style="width: 120px;">Foto</th>
+                    </tr>
+                    <tr>
+                        <td>Apis cerana</td>
+                        <td>Sim </td>
+                        <td>Asia </td>
+                        <td><img src="/Imagens/Apiscerana.jpg" alt="isso é uma Abelha Fofa" width="250" height="150"></td>
+                    </tr>
+                     <tr>
+                        <td>Mamangavas</td>
+                        <td>Não </td>
+                        <td>Brasil</td>
+                        <td><img src="/Imagens/Mamangavas.png" alt="isso é uma Abelha Fofa" width="250" height="150"></td>
+                    </tr>
+                     <tr>
+                        <td>Trigona spinipes</td>
+                        <td>Não </td>
+                        <td>America do Sul</td>
+                        <td><img src="/Imagens/Trigonaspinipes.jpg" alt="isso é uma Abelha Fofa" width="250" height="150"></td>
+                    </tr>
+                     <tr>
+                        <td colspan="4" te>Fim</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h2>Formulários</h2>
+                <form>
+                    <h1>Sign in</h1>
+                    Login:<br>
+                    <input type="text" name="login" id="login">
+                    <br>
+                    Senha:<br>
+                    <input type="password" name="senha" id="senha"><br>
+                    <input type="submit" value="Logar" name="btnLogar">
+                    <br>
+                    <br>
+                </form>
+                <form>
+                    <h1>Criar Conta </h1>
+
+                    Login:<br>
+                    <input type="text" name="cadLogin" id="cadLogin">
+                    <br>
+
+                    Gênero:<br>
+                    <input type="radio" name="gender" value="M"> Macho<br>
+                    <input type="radio" name="gender" value="F"> Fresco<br>
+                    <br>
+
+                    <label>Interesses:</label><br>
+                    <label><input type="checkbox" name="interesses" value="abelhas"> Abelhas</label><br>
+                    <label><input type="checkbox" name="interesses" value="mel"> Mel</label><br>
+                    <label><input type="checkbox" name="interesses" value="rainhas"> Rainhas</label><br>
+                    <label><input type="checkbox" name="interesses" value="colmeias"> Colmeias</label><br><br>
+
+                    Estado:<br>
+                    <select name="estado">
+                        <option value="AC">AC - Acre</option>
+                        <option value="AL">AL - Alagoas</option>
+                        <option value="AP">AP - Amapá</option>
+                        <option value="AM">AM - Amazonas</option>
+                        <option value="BA">BA - Bahia</option>
+                        <option value="CE">CE - Ceará</option>
+                        <option value="DF">DF - Distrito Federal</option>
+                        <option value="ES">ES - Espírito Santo</option>
+                        <option value="GO">GO - Goiás</option>
+                        <option value="MA">MA - Maranhão</option>
+                        <option value="MT">MT - Mato Grosso</option>
+                        <option value="MS">MS - Mato Grosso do Sul</option>
+                        <option value="MG">MG - Minas Gerais</option>
+                        <option value="PA">PA - Pará</option>
+                        <option value="PB">PB - Paraíba</option>
+                        <option value="PR">PR - Paraná</option>
+                        <option value="PE">PE - Pernambuco</option>
+                        <option value="PI">PI - Piauí</option>
+                        <option value="RJ">RJ - Rio de Janeiro</option>
+                        <option value="RN">RN - Rio Grande do Norte</option>
+                        <option value="RS">RS - Rio Grande do Sul</option>
+                        <option value="RO">RO - Rondônia</option>
+                        <option value="RR">RR - Roraima</option>
+                        <option value="SC">SC - Santa Catarina</option>
+                        <option value="SP">SP - São Paulo</option>
+                        <option value="SE">SE - Sergipe</option>
+                        <option value="TO">TO - Tocantins</option>
+                    </select><br>
+                
+                    <br>
+                    Observações:<br>
+                    <textarea></textarea><br>
+                    <input type="submit" value="Cadastrar" name="btnCadastrar">
+                </form>
+            </section>
+            <hr>
+            <section>
+                <h2>Caracteres especiais</h2>
+                <!--https://www.w3schools.com/html/html_entities.asp-->
+                <p>Os Caracteres especiais quando usado no HTML pode gerar confusão,<br> para isso é usado codigos diferentes para representar e esses caracteres</p>
+
+
+
             </section>
     </body>
 </html>
