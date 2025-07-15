@@ -4,12 +4,31 @@
         <meta charset="utf-8">
         <title>Primeira Pagina</title>
         <link rel="icon" type="image/x-icon" href="/icone/iconeHTML.ico">
+        <style>
+            body{
+                background-color: #f4d03f;
+            }
+            .botaoLink{
+                background-color: #212f3d;   /* Cor de fundo */
+                color: white;                /* Cor do texto */             
+                padding: 10px 20px;
+                border-radius: 5px;
+                border-color: #f4d03f;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .botaoLink:hover {
+                background-color: #f4d03f; /* verde mais escuro */
+                border-color: #212f3d;
+            }
+        </style>
     </head>
     <body>
         <h1>Praticando HTML</h1>
         <p>Local onde irei praticar o meu HTML, prentendo por tudo que irei aprendendo aqui</p>
         <hr>
-        <section id="Listas">
+        <section id="listas">
             <h2>Usando Lista</h2>
             <p>Temos 2 tipos de lista, a Ul que seria a não ordenada que pode ter outros estilos,<br> e a Ol que seria a ordenada numerica com diversas formas de números</p>
             <div>
@@ -45,16 +64,69 @@
             </div>
         </section>
         <hr>
-        <section>
+        <section id="imagens">
                 <h2>Usando Imagens</h2>
-                <p>Para usar imagens, se usa a tag <'img>, não tem uma closing tag.</p>
+                <p>Para usar imagens, se usa a tag 'img', não tem uma closing tag.</p>
                 <p>Ela tem 2 atributos obrigatórios.</p>
-                <ul type="square">
-                    <li> <strong>src</strong>: que especifico o caminho da imagem</li>
-                    <li> <strong>alt</strong>: que especifica um texto alternativo a imagem</li>
-                </ul>
-
-                <img id="ornitorrinco" src="/Imagens/Ornitorrinco.png" alt="isso é um Ornitorrinco" width="400" height="300">
+                    <ul type="square">
+                        <li> <strong>src</strong>: que especifico o caminho da imagem</li>
+                        <li> <strong>alt</strong>: que especifica um texto alternativo a imagem</li>
+                    </ul>
+                <h2>Exemplos</h2>
+                    <h3>Imagem na pasta</h3>
+                    <img src="/Imagens/bumble-bee.jpg" alt="isso é uma Abelha Fofa" width="400" height="300">
+                    <br>
+                    <h3>Imagem em um link</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/The_Lone_Pollinator.jpg" alt="Isso é um Abelha legal" width="400" height="300">
+                    <br>
+                    <h3>Imagem Gif</h3>
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3M4amk5c3ZxbHJ4ZGw1cjRvbXpvNWcwMXBpZjYxd2ZxeWd1ZmZsdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/THDBkIhJ42uqjXxXAs/giphy.gif" alt="Isso é uma abelha animada" width="400" height="300">
+                    
         </section>
+        <hr>
+        <section id="links">
+            <h2>Usando Links</h2>
+                <p>Usando a tag <strong>'a'</strong> , é possivel criar um elemento que ao ser clicado<br>leva o usuario a outra pagina que o dev desejar.</p>
+                <p>Um link pode ser uma imagem ou um texto, pois a tag <strong>'a'</strong> cria um hiperlink desses elementos.<br>É importante usar o atributo <strong>href</strong> para indicar o link do link</p>
+                <p></p>
+            <br>
+            <h3>Absolute URLs vs. Relative URLs</h3>
+                <ul>
+                    <li>
+                        <h4>Absolute URLs</h4>
+                        <p>	URL completa com protocolo (http, https) e domínio</p>
+                    </li>
+                    <li>
+                        <h4>Relative URLs</h4>
+                        <p>Caminho relativo à página atual ou ao domínio</p>
+                    </li>
+                </ul>
+            
+            <h3>Comportamento ao clicar</h3>
+                <ul>
+                    <li><p><strong>_self</strong>: abre na mesma pagina!</p></li>
+                    <li><p><strong>_blank</strong>: aparecem em uma nova aba</p></li>
+                    <li><p><strong>_parent</strong>: Opens the document in the parent frame</p></li>
+                    <li><p><strong>_top</strong>: Opens the document in the full body of the window</p></li>
+                </ul>
+                
+            <h2>Exemplos</h2>
+            <ul>
+                <li><h3>Link para uma nova guia:</h3></li>
+                <a target="_blank" href="https://pt.wikipedia.org/wiki/Abelha">Clique aqui!!</a>
+
+                <li><h3>Link em uma imagem:</h3></li>
+                <a target="_blank" href="https://pt.wikipedia.org/wiki/Dan%C3%A7a_do_abelh%C3%A3o">
+                    <img src="/Imagens/dancingBee.gif" alt="dancing bee" width="300" height="150">
+                </a>
+                <br>
+                <li><h3>Botão de link</h3></li>
+                <button class="botaoLink" onclick="document.location='https://www.reddit.com/r/NativePlantGardening/comments/1lua2xw/luring_bumbles_with_buttons/?tl=pt-br'">HTML Tutorial</button>
+           
+                <li><h3>Link Titles</h3></li>
+                <p>Adiciona um comentario ao passar o mouse por cima do <link rel="stylesheet" href=""></p>
+                <a href="https://www.imdb.com/pt/title/tt0389790/" title="Melhor filme do universo">Passe o mouse para uma surpresa</a>
+            </ul>
+            </section>
     </body>
 </html>
