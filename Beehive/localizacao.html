@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>BeeHive.inc - Localização</title>
+        <link rel="icon" type="image/x-icon" href="icone/bee.ico"
+    </head>
+        <style>
+        body{
+            background-color: #f4d03f;
+        }
+        .botaoLink{
+            background-color: #212f3d;   /* Cor de fundo */
+            color: white;                /* Cor do texto */             
+            padding: 10px 20px;
+            border-radius: 5px;
+            border-color: #f4d03f;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .botaoLink:hover {
+            background-color: #f4d03f; /* verde mais escuro */
+            border-color: #212f3d;
+        }
+    </style>
+    <body>
+        <table  style=" width: 900px; margin: 0 auto;">
+            <tr>
+                <td>
+                    <img height="89" src="/Imagens/beeLogo.png" alt="Logo">
+                </td>
+                <td style="text-align: center;">
+                    <a href="/Beehive/BeeHive.html" >Inicio</a> |
+                    <a href="/Beehive/quemSomos.html" >Quem Somos</a> |
+                    <a href="/Beehive/localizacao.html" >Localização</a>
+                </td>
+            </tr>
+             <tr>
+                <td colspan="2">
+                        <section id="localizacao">
+                        <h2>Onde estamos</h2>
+                        <p>Venha conhecer nossa produção e sentir de perto o aroma do nosso mel!</p>
+                        
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15536.59950725175!2d-40.59782578850822!3d-18.950166162028562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1752842897515!5m2!1spt-BR!2sbr" 
+                            width="900" 
+                            height="500" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        </section>
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <section id="contato">
+                        <h2>Entre em Contato</h2>
+                            <label>Nome:</label><br>
+                            <input type="text" id="nome"><br>
+                            <label>Sobrenome:</label><br>
+                            <input type="text" id="nome"><br>
+                            <label>E-mail:</label><br>
+                            <input type="email" id="nome"><br>
+                            <label>Observação</label><br>
+                            <textarea></textarea><br>
+                            <input type="submit" value="Enviar"><br>
+                        
+                    </section>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <h4>Todos os direitos reservados.</h4>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
